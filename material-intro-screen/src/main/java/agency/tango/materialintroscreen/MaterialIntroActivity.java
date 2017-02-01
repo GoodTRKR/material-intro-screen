@@ -238,6 +238,25 @@ public abstract class MaterialIntroActivity extends AppCompatActivity {
     }
 
     /**
+     * Show or hide next and back buttons
+     * @param show - Set true to show both buttons.
+     */
+    @SuppressWarnings("unused")
+    public void setNextAndBackButtonsVisibility(boolean show) {
+        backButton.setVisibility(show? View.VISIBLE : GONE);
+        nextButton.setVisibility(show? View.VISIBLE : GONE);
+    }
+
+    /**
+     * Show or hide the Page Indicator
+     * @param show - Set true to show Page Indicator
+     */
+    @SuppressWarnings("unused")
+    public void setPageIndicatorVisibility(boolean show) {
+        pageIndicator.setVisibility(show? View.VISIBLE : GONE);
+    }
+
+    /**
      * Get translation wrapper for next button
      *
      * @return ViewTranslationWrapper
